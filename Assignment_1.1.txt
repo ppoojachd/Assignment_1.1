@@ -1,0 +1,18 @@
+Say True or False for the below statements:
+• Prescriptive Analytics used to predict the future outcomes?
+Ans: False, Prescriptive is used to prescribe solutions to improve the outcomes. Predictive is the correct one.
+• Base R packages installed automatically?
+Ans: True
+2. What is Recycling of elements in a vector?
+Ans: If two vectors are of unequal length, the shorter one will be recycled(repeated) in order to match the longer vector. 
+3. Give an example of recycling of elements.
+Ans: e.g. 
+the following vector short_vec and long_vec have different lengths, and their sum is computed by recycling values of the shorter vector .
+One point to remember here, longer object should be multiple of shorter object.
+short_vec<- c(1,5,10)
+long_vec<-c(10,15,30,40,50,60)
+#then 
+print(short_vec + long_vec)
+
+outcome would be
+11 20 40 41 55 70
